@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Movie Hub</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        ::selection{
+            background:#2563eb;
+            color:white;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-black via-slate-950 to-blue-950 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <h1 class="text-2xl md:text-3xl font-bold tracking-wider">
+                <span class="text-blue-500">M</span>ovie
+                <span class="text-blue-500">H</span>ub
+            </h1>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-8 font-medium">
+                <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="movies.html" class="hover:text-blue-400 transition">Movies</a></li>
+                <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden">
+                <svg class="w-8 h-8"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+             class="hidden md:hidden bg-slate-950 border-t border-white/10">
+
+            <ul class="flex flex-col text-center">
+
+                <li>
+                    <a href="index.html"
+                       class="block py-4 hover:bg-blue-600 transition">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="movies.html"
+                       class="block py-4 hover:bg-blue-600 transition">
+                        Movies
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                       class="block py-4 hover:bg-blue-600 transition">
+                        About
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">
+            About Movie Hub
+        </h1>
+
+        <p class="text-slate-400 text-lg max-w-3xl mx-auto">
+            Movie Hub is a modern movie discovery platform designed for movie lovers.
+            Search thousands of movies, explore ratings, cast details, genres,
+            reviews, release dates and much more in one place.
+        </p>
+
+    </section>
+
+    <!-- Why Choose -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8">
+
+                <h2 class="text-3xl font-bold text-blue-400 mb-6">
+                    Why Choose Movie Hub?
+                </h2>
+
+                <div class="space-y-4 text-slate-300">
+
+                    <p>✓ Fast movie searching experience.</p>
+
+                    <p>✓ Detailed movie information.</p>
+
+                    <p>✓ IMDb ratings and reviews.</p>
+
+                    <p>✓ Modern responsive design.</p>
+
+                    <p>✓ Easy navigation and clean interface.</p>
+
+                    <p>✓ Works on mobile, tablet and desktop.</p>
+
+                </div>
+
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8">
+
+                <h2 class="text-3xl font-bold text-blue-400 mb-6">
+                    What Can You Find Here?
+                </h2>
+
+                <p class="text-slate-300 leading-8">
+
+                    Discover thousands of movies from different genres
+                    including Action, Adventure, Comedy, Drama,
+                    Horror, Mystery, Thriller, Animation,
+                    Romance, Fantasy, Family and Science Fiction.
+
+                    Whether you're searching for classic movies,
+                    trending blockbusters or hidden gems,
+                    Movie Hub helps you find them quickly.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Our Features
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500 transition">
+
+                <h3 class="text-2xl font-bold text-blue-400 mb-4">
+                    Smart Search
+                </h3>
+
+                <p class="text-slate-400">
+                    Instantly search movies and access information with just one click.
+                </p>
+
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500 transition">
+
+                <h3 class="text-2xl font-bold text-blue-400 mb-4">
+                    Detailed Insights
+                </h3>
+
+                <p class="text-slate-400">
+                    View movie plots, ratings, cast, directors,
+                    writers and release information.
+                </p>
+
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500 transition">
+
+                <h3 class="text-2xl font-bold text-blue-400 mb-4">
+                    Trending Movies
+                </h3>
+
+                <p class="text-slate-400">
+                    Explore trending and popular movies from around the world.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- User Guide -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-10">
+
+            <h2 class="text-4xl font-bold text-blue-400 mb-8">
+                How To Use Movie Hub
+            </h2>
+
+            <div class="space-y-5 text-slate-300">
+
+                <p>
+                    <span class="font-bold text-blue-400">Step 1:</span>
+                    Open the homepage and use the search bar.
+                </p>
+
+                <p>
+                    <span class="font-bold text-blue-400">Step 2:</span>
+                    Type your favorite movie name.
+                </p>
+
+                <p>
+                    <span class="font-bold text-blue-400">Step 3:</span>
+                    Browse the movie results.
+                </p>
+
+                <p>
+                    <span class="font-bold text-blue-400">Step 4:</span>
+                    Click any movie card to view complete details.
+                </p>
+
+                <p>
+                    <span class="font-bold text-blue-400">Step 5:</span>
+                    Explore ratings, actors, directors and story overview.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+
+        <div class="grid md:grid-cols-4 gap-6 text-center">
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+
+                <h3 class="text-4xl font-bold text-blue-500">
+                    10K+
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Movies
+                </p>
+
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+
+                <h3 class="text-4xl font-bold text-blue-500">
+                    500+
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Reviews
+                </p>
+
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+
+                <h3 class="text-4xl font-bold text-blue-500">
+                    50+
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Genres
+                </p>
+
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+
+                <h3 class="text-4xl font-bold text-blue-500">
+                    24/7
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Access
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Quote -->
+    <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+
+        <h2 class="text-4xl font-bold text-blue-400 mb-6">
+            Discover Your Next Favorite Movie
+        </h2>
+
+        <p class="text-slate-400 text-lg leading-8">
+            From timeless classics to the latest blockbusters,
+            Movie Hub helps movie enthusiasts discover stories,
+            adventures and unforgettable cinematic experiences.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-20">
+
+        <div class="max-w-7xl mx-auto px-6 py-10 text-center">
+
+            <h2 class="text-2xl md:text-3xl font-bold tracking-wider">
+                <span class="text-blue-500">M</span>ovie
+                <span class="text-blue-500">H</span>ub
+            </h2>
+
+            <p class="text-slate-400 mb-4">
+                Your gateway to discovering amazing movies.
+            </p>
+
+            <p class="text-slate-500 text-sm">
+                © 2026 Movie Hub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+        <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>

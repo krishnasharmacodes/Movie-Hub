@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        ::selection{
+            background:#2563eb;
+            color:white;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-black via-slate-950 to-blue-950 text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html" class="text-2xl font-bold tracking-wider">
+                <span class="text-blue-500">M</span>ovie
+                <span class="text-blue-500">H</span>ub
+            </a>
+
+            <a
+                href="index.html"
+                class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg transition">
+                ← Back
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <section class="text-center py-10 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold">
+            Movie Details
+        </h1>
+
+        <p class="text-slate-400 mt-3">
+            Complete information about your selected movie
+        </p>
+    </section>
+
+    <!-- Movie Content -->
+    <main id="movie-detail" class="pb-16">
+        <!-- movie-details.js yaha content inject karega -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 text-center mt-10">
+        <p class="text-slate-400">
+            © 2026 Movie Hub. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="movie-details.js"></script>
+
+</body>
+</html>
